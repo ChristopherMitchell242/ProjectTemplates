@@ -1,0 +1,68 @@
+name: Bug Report
+description: File a bug report
+title: '[Bug]: '
+labels: ['bug', 'triage']
+assignees:
+  -
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! We'll get onto this ASAP!!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description:
+        Can you tell us what happened as well as what you expected to happen?
+      placeholder: I saw a blue screen of death!
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Component
+      description:
+        If this issue is related to a specific component in the Spark-Web
+        library, let us know which one?
+      options:
+        - a11y
+        - accordion
+    validations:
+      required: false
+  - type: textarea
+    id: version
+    attributes:
+      label: Version
+      description: What version of the component did you get this error with?
+      render: shell
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Internet Explorer (Yuck!)
+  - type: textarea
+    id: logs
+    attributes:
+      label: Steps to Reproduce
+      description:
+        To help us debug as quickly as possible, please can you provide the
+        steps to reproduce. If your not sure, provide your current node version,
+        npm version, browser version and we will reach out to you.
+      render: shell
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Info
+      description:
+        Please copy and paste any relevant info that would help us
+        reproduce/debug. Logs, Screenshots etc are all helpful!
+      render: shell
