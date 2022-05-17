@@ -24,4 +24,4 @@ body:
     attributes:
       label: Description
       description: Tell us about the change 
-      render: shell      
+      render: shell
