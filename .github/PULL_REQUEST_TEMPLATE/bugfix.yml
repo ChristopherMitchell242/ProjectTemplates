@@ -1,0 +1,27 @@
+name: Feature Request
+description: Request a feature
+title: '[Bugfix]: '
+labels: ['bugfix']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PR Incoming!!
+  - type: text
+    id: jira
+    attributes:
+      label: JIRA Ticket
+      description: If this change is for a JIRA ticket then add that, otherwise just add NOJIRA. 
+      render: shell
+  - type: text
+    id: jira
+    attributes:
+      label: JIRA Ticket
+      description: If this change is for a JIRA ticket then add that, otherwise just add NOJIRA. 
+      render: shell
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Tell us about the change 
+      render: shell      
